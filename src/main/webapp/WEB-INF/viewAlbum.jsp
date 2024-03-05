@@ -29,13 +29,13 @@
 				</li>
 			</ul>
 		</nav>
-			<h1><c:out value="${ album.title }"/></h1> 
-			<h2><c:out value="${ album.artist }"/></h2>
+			<h2>Artist: <c:out value="${ album.artist }"/></h2>
 			<h3><c:out value="${ album.user.username }"/>'s rating: <c:out value="${ album.rating }"/></h3>		
 			<h3><c:out value="${ album.user.username }"/>'s review:</h3>			
 		<p>_______________________________________________</p>
 		<p><c:out value="${ album.review }"/></p>
 		<p>_______________________________________________</p>
+		<p>Date Listened: <c:out value="${ album.date }"/></p>
 		<c:if test="${ user.id.equals(album.user.id) }">
 			<div class="btns">
 				<a href="/albums/${ album.id }/edit" class="btn">Edit</a>

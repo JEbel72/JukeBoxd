@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<nav>
-  			<h1>Welcome, ${ user.username }</h1>
+  			<h1>Welcome, ${ user.username }!</h1>
 			<ul>
 				<li><a href="/albums/new">Add an Album!</a></li>
 				<li>
@@ -33,23 +33,19 @@
 		<table>
 			<thead>
 				<tr>
-					<th>ID</th>
 					<th>Date Listened:</th>
-					<th>Title</th>
-					<th>Artist</th>
-					<th>Rating</th>
-					<th>Posted By</th>
+					<th>Title:</th>
+					<th>Artist:</th>
+					<th>Rating:</th>
 				</tr>
 			</thead>
 			<tbody>
 				<c:forEach var="album" items="${ allAlbums }">
 					<tr>
-						<td><c:out value="${ album.id }"/></td>
 						<td><c:out value="${ album.date }"/></td>
 						<td><a href="/albums/${ album.id }"><c:out value="${ album.title }"/></a></td>
 						<td><c:out value="${ album.artist }"/></td>
 						<td><c:out value="${ album.rating }"/></td>
-						<td><c:out value="${ album.user.username }"/></td>
 					</tr>
 				</c:forEach>
 			</tbody>
