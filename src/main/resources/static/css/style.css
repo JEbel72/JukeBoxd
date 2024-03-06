@@ -28,6 +28,8 @@ nav ul li form {
 
 .form {
 	border: 2px solid black;
+	border-radius: 15px;
+	background-color: lightcoral;
 	width: 500px;
 	margin: 5px;
 }
@@ -48,12 +50,14 @@ form > div > input, form > div > textarea, form > div > select, form > div > div
 
 .btn {
 	background-color: forestgreen;
+	border-radius: 10px;
 	padding: 5px;
 	margin: 5px;
 }
 
 .btn-logout {
 	background-color: firebrick;
+	border-radius: 10px;
 	padding: 5px;
 	margin: 5px;
 }
